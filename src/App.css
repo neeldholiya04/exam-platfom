@@ -1,38 +1,183 @@
+/* src/App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
 .App {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.exam-window {
+  padding: 20px;
+}
+
+.timer {
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timer h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.time-display {
+  font-size: 2em;
+  font-weight: bold;
+  color: #d9534f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.violation-warning {
+  background-color: #ffcccc;
+  border: 1px solid #ff0000;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+button {
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.confirmation {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.exam-report {
+  background-color: #e6f3ff;
+  border: 1px solid #4a90e2;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.exam-instructions {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.exam-instructions h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.exam-instructions ul {
+  padding-left: 20px;
+}
+
+.exam-questions {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.question {
+  text-align: left;
+}
+
+.question h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.question ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.question li {
+  margin-bottom: 10px;
+}
+
+.question-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.fullscreen-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.fullscreen-message button {
+  margin-top: 10px;
 }

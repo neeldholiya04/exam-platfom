@@ -7,7 +7,7 @@ This is an online exam-taking platform built using **React** and **Zustand** for
 
 ## Live Demo
 
-Check out the live version of the platform [here](#). (Link will be updated)
+Check out the live version of the platform [here](https://exam-platfom.vercel.app/). (Link will be updated)
 
 ### Features
 - **Full-Screen Mode**: Exam must be taken in full-screen. Exiting full-screen triggers a warning or termination.
